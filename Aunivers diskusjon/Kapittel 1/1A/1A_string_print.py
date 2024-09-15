@@ -1,0 +1,5 @@
+print("Hei",sep = "", end = "")
+print("Hei",sep = "", end = "")
+print("Hei",sep = "", end = "")
+print("Hei",sep = "", end = "")
+print("Hei",sep = "", end = "")
