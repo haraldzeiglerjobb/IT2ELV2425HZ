@@ -16,25 +16,25 @@ v1 = 50/3.6 #m/s
 #1a
 def length_of_one_round(dist_from_center: float = 0.0):
     straight = 100.0
-    curve = 2*math.pi*(31.83+dist_from_center)
+    curve = math.pi*(31.83+dist_from_center)
     return 2*(straight +curve)
 
 
 
 def a():
-    print(f"Lengden til en runde er {length_of_one_round(0):.3f}")
+    print(f"Lengden til en runde er {length_of_one_round(0):.3f} meter (m)")
     
 
 #1b
 def b():
-    print(f"Hastigheten er {v1:.2f} m/s")
+    print(f"Hastigheten er {v1:.2f} meter pr sekund (m/s)")
     
 
 #1c
 def c():
     dist = length_of_one_round()
     t = dist/v1
-    print(f"Tiden det tar å sykle 10 runder er {10*t: .2f} sekunder")
+    print(f"Tiden det tar å sykle 10 runder er {10*t: .2f} sekunder (s)")
 
 while True:
     task = input("Løse a, b, c eller quit?")

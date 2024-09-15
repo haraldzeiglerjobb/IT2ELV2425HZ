@@ -161,3 +161,6 @@ deltaT = -273.15
 for day in vaerdata["daily"]:
     dato = dt.datetime.fromtimestamp(day["dt"])
     print(f"Dato: {dato}\t temperatur dag: {day["temp"]["day"]+deltaT: .2f}")
+
+#Kanskje vi skal lage et brukergrensesnitt for dette?
+
