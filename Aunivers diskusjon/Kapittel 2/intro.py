@@ -8,18 +8,29 @@ Oppgave: Lag din egen klasse [velg navn] og bruk konstruktør
 class Frukt:
 
     #klassevariabler
-    farge = "oransje"
-    smak = "god"
+    farge = ""
+    smak = ""
 
     def __init__(frukt, farge: str = "", produsent = ""):
 
         frukt.farge = farge
         frukt.produsent = produsent
 
+    def print_me(self):
+        print(f"Frukten heter {self.__class__}")
+        print(f"Frukten smaker {self.smak}")
+        print(f"Frukten er produsert av {self.produsent}")
+        
+    def print_class():
+        print(Frukt.farge)
+        pass
+
+
 
 class Appelsin(Frukt):
-    #klassevariabler
-    #vekt = "høy"
+    
+    farge = "oransje"
+    smak = "søt og god"
     
     def __init__(sjøl, produsent, farge: str = "oransje", land = "Spania", vekt: int =100):
         #Konstruktør
@@ -31,10 +42,15 @@ class Appelsin(Frukt):
         #mal for objektmetoder... husk "sjøl"
         pass
 
-    def print(sjøl):
-        print(sjøl.farge, sjøl.vekt, sjøl.produsent, sjøl.land)
+    def print_me(sjøl):
+        super().print_me()
+        print(f"Smaken er {Appelsin.smak}")
+        print(f"Frukten er fra {sjøl.land}")
+        print(f"Vekten er {sjøl.vekt}")
+    def print_class():
+        super().print_class()
 
 harald = Appelsin("Bama")
 print(harald.produsent)
 print(Appelsin.farge)
-harald.print()
+harald.print_me()

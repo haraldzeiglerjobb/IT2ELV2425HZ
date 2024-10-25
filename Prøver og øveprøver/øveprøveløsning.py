@@ -71,3 +71,4 @@ sjekkliste.append([0,0,0,False])	#usikker	True
 
 for i in range(len(sjekkliste)):
     print(alle_like(sjekkliste[i]))
+

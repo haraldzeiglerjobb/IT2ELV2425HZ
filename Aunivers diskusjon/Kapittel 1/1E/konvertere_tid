@@ -1,0 +1,3 @@
+import datetime as dt
+for day in vaerdata["daily"]:
+    dato = dt.datetime.fromtimestamp(day["dt"])
