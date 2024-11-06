@@ -26,6 +26,7 @@ klokka = pg.time.Clock()
 
 # Gjenta helt til brukeren lukker vinduet
 fortsett = True
+tall = 0
 while fortsett:
 
     # Sjekker om brukeren har lukket vinduet
@@ -37,7 +38,7 @@ while fortsett:
     vindu.fill(color="crimson")
 
     # Tegner en sirkel
-    pg.draw.circle(vindu, (255, 0, 0), (100, 250), 50)
+    pg.draw.circle(vindu, (255, 0, 0), (100+tall, 250), 50)
     # Tegner et rektangel
     pg.draw.rect(vindu, (0, 255, 0), (200, 250, 70, 90))
     # Tegner en ellipse
@@ -53,7 +54,8 @@ while fortsett:
 
     # Oppdaterer alt innholdet i vinduet
     pg.display.flip()
-    klokka.tick(1)
+    klokka.tick(60)
+    tall +=1
 
 # Avslutter pygame
 pg.quit()
