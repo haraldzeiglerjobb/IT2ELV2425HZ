@@ -20,9 +20,13 @@ print(type(vindu))
 # Angir hvilken skrifttype og tekststørrelse vi vil bruke på tekst
 font = pg.font.SysFont("Arial", 24)
 
+class Sirkel:
+
+    def __init__(self):
+        
 #lageren klokke
 # Create a clock object
-#klokka = pg.time.Clock()
+klokka = pg.time.Clock()
 
 # Gjenta helt til brukeren lukker vinduet
 fortsett = True
@@ -53,7 +57,7 @@ while fortsett:
 
     # Oppdaterer alt innholdet i vinduet
     pg.display.flip()
-    #klokka.tick(1)
+    klokka.tick(1)
 
 # Avslutter pygame
 pg.quit()
