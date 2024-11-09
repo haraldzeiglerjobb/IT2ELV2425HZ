@@ -39,7 +39,7 @@ while fortsett:
     # Tegner en sirkel
     pg.draw.circle(vindu, (255, 0, 0), (100, 250), 50)
     # Tegner et rektangel
-    pg.draw.rect(vindu, (0, 255, 0), (200, 250, 70, 90))
+    pg.draw.rect(vindu, (0, 255, 0), (400, 200, 600, 300))
     # Tegner en ellipse
     pg.draw.ellipse(vindu, (0, 0, 255),(100,200,300,400))
         # Tegner en ellipse
