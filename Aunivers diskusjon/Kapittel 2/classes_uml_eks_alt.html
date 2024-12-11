@@ -1,0 +1,45 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class car {
+            engine1
+            equip : list
+            reg_nr : int
+            add_equipment(equip: equipment)
+            new_equipment(text)
+          }
+          class engine {
+            engines_produced : int
+            hp : int
+            rev : int
+            running : bool
+            print()
+            start()
+          }
+          class equipment {
+            equipment_name
+          }
+          class garage {
+            car_list : list
+            name
+            add_car(car_object)
+          }
+          class vehicle_4wh {
+            color : str
+            number_of_wheels : int
+            parked : bool
+            seats : int
+            park()
+            un_park()
+          }
+          car --|> vehicle_4wh
+          engine --o car : engine1
+          garage --* car
+          car --|> equipment
+  
+       </div>
+  </body>
+</html>

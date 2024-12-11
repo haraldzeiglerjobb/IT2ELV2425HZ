@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class Appelsin {
+            assos
+            compos : list
+            farge : str
+            land : str
+            smak : str
+            vekt : int
+            objektmetode(compos: composition)
+            print_class()
+            print_me()
+          }
+          class Frukt {
+            farge : str
+            produsent : str
+            smak : str
+            print_class()
+            print_me()
+          }
+          class assosiert {
+            param1
+            method1()*
+          }
+          class composition {
+            param1
+            method1()*
+          }
+          Appelsin --|> Frukt
+          assosiert --o Appelsin : assos
+  
+       </div>
+  </body>
+</html>
