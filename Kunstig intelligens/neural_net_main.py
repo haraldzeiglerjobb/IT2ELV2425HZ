@@ -46,7 +46,7 @@ def main():
 def main2():
 
     #The list of number of neurons in each layer
-    neur_in_lay = [2,5,3]
+    neur_in_lay = [1,2,1]
     number_of_layers = len(neur_in_lay)
 
     #The horisontal and vertical division of available space    
